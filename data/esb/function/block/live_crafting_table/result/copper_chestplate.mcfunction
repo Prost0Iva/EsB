@@ -1,0 +1,2 @@
+give @n[distance=..10,predicate=esb:craft_result,type=player] netherite_chestplate[custom_data={copper_chestplate:1b},item_model="esb:copper_chestplate",item_name='{"translate": "esb:copper_chestplate"}',max_damage=359,damage=0,attribute_modifiers={modifiers:[{type:"armor",amount:6,id:"copper_chestplate",operation:"add_value",slot:"chest"}],show_in_tooltip:true},equippable={slot:chest,asset_id:"esb:copper",swappable:true,equip_sound:"item.armor.equip_iron"},rarity="common",!damage_resistant]
+function esb:block/live_crafting_table/count_-1

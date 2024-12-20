@@ -1,0 +1,137 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:command_block",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 8,
+                  "max": 20
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": {"charged_copper_ingot":1},
+                  "minecraft:item_name": "{\"translate\":\"esb:charged_copper_ingot\"}",
+                  "minecraft:item_model": "esb:charged_copper_ingot",
+                  "rarity": "common"
+                }
+              },
+              {
+                "function": "minecraft:enchanted_count_increase",
+                "enchantment": "minecraft:looting",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chain_command_block",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "item_model":"esb:golem_fist",
+                  "item_name":"{\"translate\": \"esb:golem_fist\"}",
+                  "custom_data":{"golem_fist":1},
+                  "rarity":"rare",
+                  "!max_stack_size":{},
+                  "consumable":{"consume_seconds":2000000000},
+                  "attribute_modifiers":{
+                    "modifiers":[{
+                      "amount":7,
+                      "id":"golem_fist",
+                      "operation":"add_value",
+                      "type":"attack_damage",
+                      "slot":"mainhand"
+                    },
+                    {
+                      "amount":-3.2,
+                      "id":"golem_fist",
+                      "operation":"add_value",
+                      "type":"attack_speed",
+                      "slot":"mainhand"
+                    },
+                    {
+                      "amount":-1,
+                      "id":"golem_fist",
+                      "operation":"add_value",
+                      "type":"entity_interaction_range",
+                      "slot":"mainhand"
+                    }],
+                    "show_in_tooltip":false
+                    },
+                  "lore":["{\"text\": \"\"}","{\"translate\": \"item.modifiers.mainhand\",\"color\": \"gray\",\"italic\": false}","[{\"text\": \" 8 \",\"color\": \"dark_green\",\"italic\": false},{\"translate\": \"attribute.name.attack_damage\",\"color\": \"dark_green\",\"italic\": false}]","[{\"text\": \" 0.8 \",\"color\": \"dark_green\",\"italic\": false},{\"translate\": \"attribute.name.attack_speed\",\"color\": \"dark_green\",\"italic\": false}]","[{\"text\": \" 2 \",\"color\": \"dark_green\",\"italic\": false},{\"translate\": \"attribute.name.entity_interaction_range\",\"color\": \"dark_green\",\"italic\": false}]"],
+                  "damage":0,
+                  "max_damage":695}
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance_with_enchanted_bonus",
+                "enchantment": "minecraft:looting",
+                "unenchanted_chance": 0.1,
+                "enchanted_chance": {
+                  "type": "minecraft:linear",
+                  "base": 0.15,
+                  "per_level_above_first": 0.04
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chain_command_block",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "item_model":"esb:storm_vane",
+                  "item_name":"{\"translate\": \"esb:storm_vane\"}",
+                  "custom_data":{"storm_vane":1},
+                  "rarity":"epic",
+                  "!max_stack_size":{},
+                  "consumable":{"consume_seconds":2000000000},
+                  "damage":0,
+                  "max_damage":25
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance_with_enchanted_bonus",
+                "enchantment": "minecraft:looting",
+                "unenchanted_chance": 0.02,
+                "enchanted_chance": {
+                  "type": "minecraft:linear",
+                  "base": 0.04,
+                  "per_level_above_first": 0.03
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

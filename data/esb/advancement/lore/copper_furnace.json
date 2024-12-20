@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:item_model": "esb:block/copper_furnace"
+      }
+    },
+    "title": {
+      "translate": "esb:lore/copper_furnace"
+    },
+    "description": {
+      "translate": "esb:lore/copper_furnace_description"
+    },
+    "frame": "task",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "esb:lore/copper_golem",
+  "criteria": {
+    "esb": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

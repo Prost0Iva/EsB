@@ -1,0 +1,1 @@
+$summon item_display ^ ^ ^ {Tags:[icicle],item:{id:command_block,components:{item_model:"esb:entity/icicle"}},Rotation:$(Rotation),teleport_duration:2,CustomName:'{"translate": "esb:icicle"}'}

@@ -1,0 +1,1 @@
+$summon item_display ^ ^ ^ {Tags:[energy_charge],Rotation:$(Rotation),teleport_duration:2,CustomName:'{"translate": "esb:energy_charge"}'}

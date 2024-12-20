@@ -1,0 +1,2 @@
+execute at @s if score @s esb.projectile_damage_time matches 5 positioned ~ ~-2 ~ run damage @n[type=!#esb:entity,distance=..1.5] 2.5 mob_projectile by @s
+execute unless score @s esb.projectile_damage_time matches 5 run scoreboard players add @s esb.projectile_damage_time 1

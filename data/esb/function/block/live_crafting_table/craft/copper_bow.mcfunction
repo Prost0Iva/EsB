@@ -1,0 +1,2 @@
+execute unless items block ~ ~ ~ container.15 jigsaw[custom_data={craft_result:1b}] if entity @a[distance=..10,predicate=esb:craft_result] run function esb:block/live_crafting_table/result/copper_bow
+execute unless items block ~ ~ ~ container.15 * run item replace block ~ ~ ~ container.15 with jigsaw[custom_data={craft_result:1b},item_name='{"translate":"esb:copper_bow"}',rarity="common",item_model="esb:copper_bow"] 1

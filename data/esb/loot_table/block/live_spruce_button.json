@@ -1,0 +1,25 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:glow_item_frame"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_components",
+            "components": {
+              "minecraft:custom_data": {"live_spruce_button":1},
+              "minecraft:item_name": "{\"translate\":\"esb:live_spruce_button\"}",
+              "minecraft:item_model": "esb:block/live_spruce/button_inventory",
+              "minecraft:entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["live_spruce_button"]}
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

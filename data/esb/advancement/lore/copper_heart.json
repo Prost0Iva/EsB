@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:item_model": "esb:copper_heart"
+      }
+    },
+    "title": {
+      "translate": "esb:lore/copper_heart"
+    },
+    "description": {
+      "translate": "esb:lore/copper_heart_description"
+    },
+    "frame": "task",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "esb:lore/root",
+  "criteria": {
+    "esb": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:command_block",
+            "components": {
+              "minecraft:custom_data": {
+                "copper_heart": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

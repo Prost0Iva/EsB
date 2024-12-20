@@ -1,0 +1,8 @@
+execute if predicate esb:weather_clear if score @s esb.magic_potential matches 500.. if items entity @s weapon.mainhand chain_command_block[custom_data={storm_vane:1b}] unless items entity @s weapon.offhand chain_command_block[custom_data={storm_vane:1b}] run item modify entity @s weapon.mainhand [{"function": "minecraft:set_damage","damage": -0.04,"add": true}]
+execute if predicate esb:weather_clear if score @s esb.magic_potential matches 500.. unless items entity @s weapon.mainhand chain_command_block[custom_data={storm_vane:1b}] if items entity @s weapon.offhand chain_command_block[custom_data={storm_vane:1b}] run item modify entity @s weapon.offhand [{"function": "minecraft:set_damage","damage": -0.04,"add": true}]
+execute if predicate esb:weather_clear if score @s esb.magic_potential matches 500.. if items entity @s weapon.mainhand chain_command_block[custom_data={storm_vane:1b}] if items entity @s weapon.offhand chain_command_block[custom_data={storm_vane:1b}] run item modify entity @s weapon.mainhand [{"function": "minecraft:set_damage","damage": -0.04,"add": true}]
+execute if predicate esb:weather_clear if score @s esb.magic_potential matches 500.. run clear @s chain_command_block[custom_data={storm_vane:1b},damage=25]
+execute if predicate esb:weather_clear if score @s esb.magic_potential matches 500.. run playsound minecraft:entity.lightning_bolt.thunder player @a ~ ~ ~ 1 2
+execute if predicate esb:weather_clear if score @s esb.magic_potential matches 500.. run weather thunder
+execute if predicate esb:weather_clear if score @s esb.magic_potential matches 500.. run scoreboard players remove @s esb.magic_potential 500
+advancement revoke @s only esb:use_item/storm_vane

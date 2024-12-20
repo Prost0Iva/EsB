@@ -1,0 +1,2 @@
+give @n[distance=..10,predicate=esb:craft_result,type=player] bow[max_damage=568,item_model="esb:copper_bow",item_name='{"translate": "esb:copper_bow"}',custom_data={copper_bow:1b}]
+function esb:block/live_crafting_table/count_-1

@@ -1,0 +1,9 @@
+item modify block ~ ~ ~ container.1 esb:count_-1
+item modify block ~ ~ ~ container.2 esb:count_-1
+item modify block ~ ~ ~ container.3 esb:count_-1
+item modify block ~ ~ ~ container.10 esb:count_-1
+item modify block ~ ~ ~ container.11 esb:count_-1
+item modify block ~ ~ ~ container.12 esb:count_-1
+item modify block ~ ~ ~ container.19 esb:count_-1
+item modify block ~ ~ ~ container.20 esb:count_-1
+item modify block ~ ~ ~ container.21 esb:count_-1

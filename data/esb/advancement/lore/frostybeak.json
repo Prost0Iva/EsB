@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:item_model": "esb:ominous_ice_bottle"
+      }
+    },
+    "title": {
+      "translate": "esb:lore/frostybeak"
+    },
+    "description": {
+      "translate": "esb:lore/frostybeak_description"
+    },
+    "frame": "task",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "esb:lore/iceologers_hut",
+  "criteria": {
+    "esb": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

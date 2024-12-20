@@ -1,0 +1,2 @@
+execute as @a[predicate=esb:item/frozen_catcher] at @s if score @s esb.fishing_rod_use matches 1 anchored eyes positioned ^ ^ ^ run tag @n[type=fishing_bobber,distance=...5] add frozen_catcher
+execute as @e[type=fishing_bobber,tag=frozen_catcher] at @s run particle dust{color:[0,1,1],scale:1} ~ ~.1 ~ 0 0 0 0 1

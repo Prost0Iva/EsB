@@ -1,0 +1,2 @@
+give @n[distance=..10,predicate=esb:craft_result,type=player] netherite_boots[custom_data={copper_boots:1b},item_model="esb:copper_boots",item_name='{"translate": "esb:copper_boots"}',max_damage=310,damage=0,attribute_modifiers={modifiers:[{type:"armor",amount:2,id:"copper_boots",operation:"add_value",slot:"feet"}],show_in_tooltip:true},equippable={slot:feet,asset_id:"esb:copper",swappable:true,equip_sound:"item.armor.equip_iron"},rarity="common",!damage_resistant]
+function esb:block/live_crafting_table/count_-1

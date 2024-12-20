@@ -1,0 +1,2 @@
+give @n[distance=..10,predicate=esb:craft_result,type=player] command_block[item_model="esb:copper_heart",item_name='{"translate": "esb:copper_heart"}',custom_data={copper_heart:1b},rarity="common",max_stack_size=8,consumable={consume_seconds:2000000000}]
+function esb:block/live_crafting_table/count_-1

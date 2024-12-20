@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:custom_data": {
+                "golem_fist": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "esb:item/golem_fist/use"
+    }
+  }
+  

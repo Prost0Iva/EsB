@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:command_block",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {"item_model":"esb:ice_crystal","item_name":"{\"translate\":\"esb:ice_crystal\"}","custom_data":{"ice_crystal":1},"rarity":"rare"}
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

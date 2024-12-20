@@ -1,0 +1,25 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "esb.body_id": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#id"
+          },
+          "score": "esb.body_id"
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#id"
+          },
+          "score": "esb.body_id"
+        }
+      }
+    }
+  }
+  

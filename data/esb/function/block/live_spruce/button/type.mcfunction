@@ -1,0 +1,6 @@
+execute if block ~ ~ ~ spruce_button[face=ceiling,powered=false] run data modify entity @s item.components."minecraft:item_model" set value "esb:block/live_spruce/button_ceiling"
+execute if block ~ ~ ~ spruce_button[face=ceiling,powered=true] run data modify entity @s item.components."minecraft:item_model" set value "esb:block/live_spruce/button_ceiling_powered"
+execute if block ~ ~ ~ spruce_button[face=floor,powered=false] run data modify entity @s item.components."minecraft:item_model" set value "esb:block/live_spruce/button_floor"
+execute if block ~ ~ ~ spruce_button[face=floor,powered=true] run data modify entity @s item.components."minecraft:item_model" set value "esb:block/live_spruce/button_floor_powered"
+execute if block ~ ~ ~ spruce_button[face=wall,powered=false] run data modify entity @s item.components."minecraft:item_model" set value "esb:block/live_spruce/button"
+execute if block ~ ~ ~ spruce_button[face=wall,powered=true] run data modify entity @s item.components."minecraft:item_model" set value "esb:block/live_spruce/button_powered"

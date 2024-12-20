@@ -1,0 +1,2 @@
+give @n[distance=..10,predicate=esb:craft_result,type=player] arrow[item_model="esb:copper_arrow",item_name='{"translate": "esb:copper_arrow"}',custom_data={copper_arrow:1b}] 16
+function esb:block/live_crafting_table/count_-1

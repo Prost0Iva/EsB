@@ -1,0 +1,5 @@
+scoreboard players add #total_id esb.body_id 1
+summon skeleton ~ ~ ~ {PersistenceRequired:1b,Tags:[brain,taiga_spirit],DeathLootTable:"esb:entity/taiga_spirit",CustomName:'{"translate": "esb:taiga_spirit"}',HandItems:[{},{}],ArmorItems:[{},{},{},{id:"command_block",components:{item_model:"esb:none"}}],HandDropChances:[0.0f,0.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],attributes:[{id:"max_health",base:95},{id:"attack_damage",base:4},{id:"scale",base:1.4},{id:"knockback_resistance",base:.6},{id:"movement_speed",base:0.14}],active_effects:[{id:"invisibility",duration:-1,show_particles:0b}],Silent:1b,Health:95}
+summon minecraft:item_display ~ ~ ~ {Tags:[body,taiga_spirit],item:{id:"potion",components:{item_model:"esb:entity/taiga_spirit/default"}},teleport_duration:2}
+scoreboard players operation @n[type=skeleton,tag=taiga_spirit] esb.body_id = #total_id esb.body_id
+scoreboard players operation @n[type=item_display,tag=taiga_spirit] esb.body_id = #total_id esb.body_id

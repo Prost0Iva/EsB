@@ -1,0 +1,2 @@
+give @n[distance=..10,predicate=esb:craft_result,type=player] netherite_helmet[custom_data={copper_helmet:1b},item_model="esb:copper_helmet",item_name='{"translate": "esb:copper_helmet"}',max_damage=315,damage=0,attribute_modifiers={modifiers:[{type:"armor",amount:2,id:"copper_helmet",operation:"add_value",slot:"head"}],show_in_tooltip:true},equippable={slot:head,asset_id:"esb:copper",swappable:true,equip_sound:"item.armor.equip_iron"},rarity="common",!damage_resistant]
+function esb:block/live_crafting_table/count_-1

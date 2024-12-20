@@ -1,0 +1,2 @@
+give @n[distance=..10,predicate=esb:craft_result,type=player] glow_item_frame[custom_data={"live_spruce_fence":1b},item_name='{"translate":"esb:live_spruce_fence"}',item_model="esb:block/live_spruce/fence/inventory",entity_data={id:"glow_item_frame",Invisible:true,Silent:true,Tags:["live_spruce_fence"]}] 3
+function esb:block/live_crafting_table/count_-1

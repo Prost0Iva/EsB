@@ -1,0 +1,34 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "slots": {
+            "player.cursor": {
+              "items": "minecraft:jigsaw",
+              "components": {
+                "minecraft:custom_data": {"invisible_slot":1}
+              }
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "slots": {
+            "container.*": {
+              "items": "minecraft:jigsaw",
+              "components": {
+                "minecraft:custom_data": {"invisible_slot":1}
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+  

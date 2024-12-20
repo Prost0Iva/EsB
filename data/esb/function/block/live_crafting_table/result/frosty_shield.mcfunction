@@ -1,0 +1,2 @@
+give @n[distance=..10,predicate=esb:craft_result,type=player] shield[custom_data={frosty_shield:1b},item_name='{"translate":"esb:frosty_shield"}',rarity="uncommon",max_damage=567,item_model="esb:frosty_shield"] 1
+function esb:block/live_crafting_table/count_-1

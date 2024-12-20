@@ -1,0 +1,15 @@
+{
+    "structures": [
+      {
+        "structure": "esb:taiga_ravine",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 14357618,
+      "spacing": 18,
+      "separation": 10
+    }
+  }
+  

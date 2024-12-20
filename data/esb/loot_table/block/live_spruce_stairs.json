@@ -1,0 +1,26 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:glow_item_frame"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_components",
+            "components": {
+              "minecraft:custom_data": {"live_spruce_stairs":1},
+              "minecraft:item_name": "{\"translate\":\"esb:live_spruce_stairs\"}",
+              "minecraft:lore": ["{\"translate\":\"esb:shift_top_lore\",\"color\":\"dark_gray\",\"italic\":false}"],
+              "minecraft:item_model": "esb:block/live_spruce/stairs/bottom_w",
+              "minecraft:entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["live_spruce_stairs"]}
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

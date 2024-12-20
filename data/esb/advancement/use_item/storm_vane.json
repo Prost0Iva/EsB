@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:custom_data": {
+                "storm_vane": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "esb:item/storm_vane/use"
+    }
+  }
+  

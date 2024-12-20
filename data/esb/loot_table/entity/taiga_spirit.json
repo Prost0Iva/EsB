@@ -1,0 +1,162 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stick",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 6
+                }
+              },
+              {
+                "function": "minecraft:enchanted_count_increase",
+                "enchantment": "minecraft:looting",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:glow_item_frame",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": {"live_spruce_log":1},
+                  "minecraft:item_name": "{\"translate\":\"esb:live_spruce_log\"}",
+                  "minecraft:item_model": "esb:block/live_spruce/log",
+                  "minecraft:entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["live_spruce_log"]}
+                }
+              },
+              {
+                "function": "minecraft:enchanted_count_increase",
+                "enchantment": "minecraft:looting",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:glow_item_frame",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 8
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": {"live_spruce_leaves":1},
+                  "minecraft:item_name": "{\"translate\":\"esb:live_spruce_leaves\"}",
+                  "minecraft:item_model": "esb:block/live_spruce/leaves",
+                  "minecraft:entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["live_spruce_leaves"]}
+                }
+              },
+              {
+                "function": "minecraft:enchanted_count_increase",
+                "enchantment": "minecraft:looting",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:glow_item_frame",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:custom_data": {"live_spruce_sapling":1},
+                    "minecraft:item_name": "{\"translate\":\"esb:live_spruce_sapling\"}",
+                    "minecraft:item_model": "esb:live_spruce_sapling",
+                    "minecraft:entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["live_spruce_sapling"]}
+                  }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:wooden_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                    "item_model":"esb:spruce_cleaver",
+                    "item_name":"{\"translate\":\"esb:spruce_cleaver\"}",
+                    "attribute_modifiers":{"modifiers":[
+                        {"id":"spruce_cleaver","type":"attack_damage","amount":7,"operation":"add_value","slot":"mainhand"},
+                        {"id":"spruce_cleaver","type":"attack_speed","amount":-2.8,"operation":"add_value","slot":"mainhand"}],
+                        "show_in_tooltip":false},
+                    "consumable":{"animation":"spyglass","consume_seconds":2000000000,"has_consume_particles":false},
+                    "custom_data":{"spruce_cleaver":1},
+                    "max_damage":145,
+                    "lore":["{\"text\": \"\"}","{\"translate\": \"item.modifiers.mainhand\",\"color\": \"gray\",\"italic\": false}","[{\"text\": \" 8 \",\"color\": \"dark_green\",\"italic\": false},{\"translate\": \"attribute.name.attack_damage\",\"color\": \"dark_green\",\"italic\": false}]","[{\"text\": \" 1.2 \",\"color\": \"dark_green\",\"italic\": false},{\"translate\": \"attribute.name.attack_speed\",\"color\": \"dark_green\",\"italic\": false}]"]
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance_with_enchanted_bonus",
+                "enchantment": "minecraft:looting",
+                "unenchanted_chance": 0.15,
+                "enchanted_chance": {
+                  "type": "minecraft:linear",
+                  "base": 0.20,
+                  "per_level_above_first": 0.05
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

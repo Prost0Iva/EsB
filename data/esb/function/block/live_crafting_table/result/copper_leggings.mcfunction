@@ -1,0 +1,2 @@
+give @n[distance=..10,predicate=esb:craft_result,type=player] netherite_leggings[custom_data={copper_leggings:1b},item_model="esb:copper_leggings",item_name='{"translate": "esb:copper_leggings"}',max_damage=326,damage=0,attribute_modifiers={modifiers:[{type:"armor",amount:4,id:"copper_leggings",operation:"add_value",slot:"legs"}],show_in_tooltip:true},equippable={slot:legs,asset_id:"esb:copper",swappable:true,equip_sound:"item.armor.equip_iron"},rarity="common",!damage_resistant]
+function esb:block/live_crafting_table/count_-1

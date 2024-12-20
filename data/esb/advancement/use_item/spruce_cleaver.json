@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:custom_data": {
+                "spruce_cleaver": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "esb:item/spruce_cleaver/use"
+    }
+  }
+  
